@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alwayswiseadvice</title>
+
+</head>
+
+<body class="d-flex flex-column h-100 text-bg-dark">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md fixed-top text-bg-light">
+            <div class="container-fluid">
+                <a href="index.html"><img src="img/logo.png" alt="" class="mx-2"></a>
+                <a class="navbar-brand" href="index.html">AlwaysWiseAdvice</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="myInput" onkeyup="findName()" type="search"
+                            placeholder="Search name" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <section class="container mt-4 gy-5">
+            <h3><em>Insurance data</em></h3>
+            <div id="table_section" class="container" style="overflow-x:auto;">
+                <table id="dataTable" class="table table-dark table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope=" col">#</th>
+                            <th scope="col">Name/th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row"></th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="container">
+            <h3><em>New card</em></h3>
+            <form class="row needs-validation" novalidate>
+                <div class="col text-center">
+                    <img id="card_image" src="img/person_man.png" alt="" onClick="imgsrc();">
+                </div>
+                <div class="col-12-sm col-md">
+                    <div class="input-container m-3">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="John"
+                            aria-label="First name" required>
+                        <div class="invalid-feedback">Please enter your first name...</div>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="input-container m-3">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Smith" aria-label="Last name"
+                            required>
+                        <div class="invalid-feedback">Please enter your last name...</div>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+                </div>
+                <div class="col-12-sm col-md">
+                    <div class="input-container m-3">
+                        <label for="phoneNumber" class="form-label">Telephone</label>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="777 777 777"
+                            aria-label="Telephone" required>
+                        <div class="invalid-feedback">Please enter you telephone...</div>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="input-container m-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="date" class="form-control" id="age" placeholder="28" aria-label="Age" required>
+                        <div class="invalid-feedback">Please choose the date...</div>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+                </div>
+                <div class=" col-12 text-center">
+                    <button id="addButton" class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer footer-expand-md mt-5 py-3 bg-body-tertiary sticky-bottom">
+        <div class="container text-center col-10">
+            <span class="text-body-secondary">AlwaysWiseAdvice</span>
+        </div>
+    </footer>
+
+    <script src="js/TableData.js"></script>
+    <script src="js/TableRow.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

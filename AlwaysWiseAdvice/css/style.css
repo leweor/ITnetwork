@@ -1,0 +1,19 @@
+main > .container {
+  padding: 60px 15px 0;
+}
+
+nav img {
+  width: 40px;
+}
+
+#table_section {
+  height: 17.4rem;
+}
+
+#card_image {
+  width: 15rem;
+}
+
+#pacman {
+  width: 20rem;
+}
